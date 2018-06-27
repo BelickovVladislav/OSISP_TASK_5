@@ -28,13 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.clock = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // clock
+            // 
+            this.clock.AutoSize = true;
+            this.clock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.clock.Location = new System.Drawing.Point(287, 118);
+            this.clock.Name = "clock";
+            this.clock.Size = new System.Drawing.Size(2, 78);
+            this.clock.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.clock);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label clock;
     }
 }
 
